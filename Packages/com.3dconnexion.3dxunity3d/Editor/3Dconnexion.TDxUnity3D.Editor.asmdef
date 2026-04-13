@@ -1,0 +1,24 @@
+{
+    "name": "TDxController",
+    "references": [],
+    "includePlatforms": [
+        "Editor",
+        "WebGL",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.3dconnexion.tdxunity3d",
+            "expression": "0.0.1",
+            "define": "TDXUNITY3D_VERSION"
+        }
+    ],
+    "noEngineReferences": false
+}
