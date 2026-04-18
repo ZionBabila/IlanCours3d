@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "com.3dconnexion.3dxunity3d": {
-      "version": "file:com.3dconnexion.3dxunity3d",
+      "version": "file:C:/Users/babil/Documents/My Games/3DxUnity3D/src",
       "depth": 0,
-      "source": "embedded",
+      "source": "local",
       "dependencies": {}
     },
     "com.unity.ai.navigation": {
