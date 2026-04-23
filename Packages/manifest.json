@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.3dconnexion.3dxunity3d": "file:C:/Users/babil/Documents/My Games/3DxUnity3D/src",
     "com.unity.ai.navigation": "2.0.11",
     "com.unity.collab-proxy": "2.11.4",
     "com.unity.ide.rider": "3.0.39",
