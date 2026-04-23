@@ -1,14 +1,11 @@
 {
   "dependencies": {
-<<<<<<< HEAD
     "com.3dconnexion.3dxunity3d": {
       "version": "file:com.3dconnexion.3dxunity3d",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
     },
-=======
->>>>>>> 970af800704f219223d1820fda0be7633723c0d3
     "com.unity.ai.navigation": {
       "version": "2.0.11",
       "depth": 0,
