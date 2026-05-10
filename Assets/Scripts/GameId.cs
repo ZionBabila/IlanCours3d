@@ -4,7 +4,7 @@ public class GameId : MonoBehaviour
 {
     public enum Interact
     {
-        None, PlayAnimation, LiftOnject,
+        None, PlayAnimation, LiftOnject
     }
     public Interact MyInteract;
 

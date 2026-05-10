@@ -40,6 +40,21 @@ public class PlayerDetection : MonoBehaviour
         Gizmos.DrawWireSphere(Origin.position + Origin.forward * Distance, radius);
         Gizmos.DrawLine(Origin.position, Origin.position + Origin.forward * Distance);
     }
+    private void interactUi(GameId gameId)
+    {
+        if(gameId != null)
+        {
+            if(gameId.MyInteract == GameId.Interact.PlayAnimation)
+            {
+                interactPlayAnimation playAnim = gameId.gameObject.GetComponent<interactPlayAnimation>();
+                if(playAnim != null)
+                {
+                    playAnim.PlayAnimator();
+                    return;
+                }
+            }
+        }
+    }
     private void Interact(GameId gameId)
     {
         if(gameId != null)
