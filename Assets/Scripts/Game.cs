@@ -9,7 +9,7 @@ public class Game : MonoBehaviour
    // public Health PlayerHeath;
     //public DeathCollider deathCollider;
 
-    //public Inventory inventory;
+    public Inventory inventory;
     //public OpenPage openPage;
     //public DialogueMenu dialogueMenu;
     public Hud hud;

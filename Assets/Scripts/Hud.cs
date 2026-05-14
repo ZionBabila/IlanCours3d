@@ -30,6 +30,11 @@ public class Hud : MonoBehaviour
         //     SetPlayerHp(Game.Instance.PlayerHeath.CurrentHp);
         // }
     }
+
+    public void SetPointer(bool isInteractable)
+    {
+        Pointer.sprite = isInteractable ? Interact : Point;
+    }
     // public void SetPlayerHp(int hp)
     // {
     //     PlayerHp.gameObject.SetActive(true);

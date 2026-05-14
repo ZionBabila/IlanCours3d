@@ -4,13 +4,13 @@ public class GameId : MonoBehaviour
 {
     public enum Interact
     {
-        None, PlayAnimation, LiftOnject
+        None, PlayAnimation, LiftOnject, InventoryItem
     }
     public Interact MyInteract;
 
-    public enum HipsterInventorty
+    public enum HipsterInventory
     {
         None, coffeeBeansFromColobia, coffeeBeansFromBrazil, MokaPot, coffeeBeansFromIndonesia
     }
-    public HipsterInventorty MyHipsterInventorty;
+    public HipsterInventory MyHipsterInventory;
 }

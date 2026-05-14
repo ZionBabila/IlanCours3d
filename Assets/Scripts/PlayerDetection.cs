@@ -23,16 +23,25 @@ public class PlayerDetection : MonoBehaviour
 
     private void Update()
     {
+        GameId gameId = null;
         if (Physics.SphereCast(Origin.position , radius, Origin.forward, out hit, Distance))
         {
             IHit = hit.collider.gameObject;
-            GameId gameId = IHit.GetComponent<GameId>();
+            gameId = IHit.GetComponent<GameId>();
             Interact(gameId);
         }
         else
         {
             IHit = null;
         }
+        UpdatePointer(gameId);
+    }
+
+    private void UpdatePointer(GameId gameId)
+    {
+        if (Game.Instance == null || Game.Instance.hud == null) return;
+        bool isInteractable = gameId != null && gameId.MyInteract != GameId.Interact.None;
+        Game.Instance.hud.SetPointer(isInteractable);
     }
     private void OnDrawGizmos()
     {
@@ -87,6 +96,17 @@ public class PlayerDetection : MonoBehaviour
                             return;
                         }
                     }
+                    if (gameId.MyInteract == GameId.Interact.InventoryItem)
+                    {
+                        if (Game.Instance != null)
+                        {
+                            Game.Instance.inventory.AddItem(gameId.MyHipsterInventory, 1);
+                            gameId.gameObject.SetActive(false);
+                            Game.Instance.inventory.SortInventory();
+                            return;
+                        }
+                    }
+                    
                 }
             }
         }
